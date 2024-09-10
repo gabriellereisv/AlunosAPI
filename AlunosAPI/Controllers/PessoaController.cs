@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AlunosAPI.Models;
+using AlunosAPI.Repositories;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,18 +10,26 @@ namespace AlunosAPI.Controllers
     [ApiController]
     public class PessoaController : ControllerBase
     {
+
+        private readonly PessoaRepository _pessoaRepository;
+
+        public PessoaController(PessoaRepository pessoaRepository)
+        {
+            _pessoaRepository = pessoaRepository;
+        }
+
         // GET: api/<PessoaController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IEnumerable<Pessoa>> Listar()
         {
-            return new string[] { "jose", "ana" };
+            return await _pessoaRepository.ListarTodasPessoas();
         }
 
         // GET api/<PessoaController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<Pessoa> BuscarPorId(int id)
         {
-            return "value";
+            return await _pessoaRepository.BuscarPorId(id);
         }
 
         // POST api/<PessoaController>
@@ -36,8 +46,11 @@ namespace AlunosAPI.Controllers
 
         // DELETE api/<PessoaController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            await _pessoaRepository.DeletarPorId(id);
+            return Ok();
         }
     }
+
 }

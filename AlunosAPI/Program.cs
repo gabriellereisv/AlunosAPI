@@ -1,8 +1,13 @@
+using AlunosAPI.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
+//Leitura da conexão com o banco
+builder.Services.AddSingleton<PessoaRepository>(provider => new PessoaRepository(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

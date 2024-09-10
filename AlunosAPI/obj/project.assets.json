@@ -2027,11 +2027,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Guilherme santos\\C#\\AlunosAPI\\AlunosAPI\\AlunosAPI.csproj",
+      "projectUniqueName": "\\\\server\\ALUNOS DEV\\gabrielle.cristine\\SHILTON C#\\AlunosAPI\\AlunosAPI\\AlunosAPI.csproj",
       "projectName": "AlunosAPI",
-      "projectPath": "C:\\Guilherme santos\\C#\\AlunosAPI\\AlunosAPI\\AlunosAPI.csproj",
+      "projectPath": "\\\\server\\ALUNOS DEV\\gabrielle.cristine\\SHILTON C#\\AlunosAPI\\AlunosAPI\\AlunosAPI.csproj",
       "packagesPath": "C:\\Users\\Alunos\\.nuget\\packages\\",
-      "outputPath": "C:\\Guilherme santos\\C#\\AlunosAPI\\AlunosAPI\\obj\\",
+      "outputPath": "\\\\server\\ALUNOS DEV\\gabrielle.cristine\\SHILTON C#\\AlunosAPI\\AlunosAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alunos\\AppData\\Roaming\\NuGet\\NuGet.Config",

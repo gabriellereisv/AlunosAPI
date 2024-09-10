@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qQpA9GOrZjOY467pm/YqcIqHvUzVmDtezDVNhKrbeJd1Nv4qtQvffRAIdcGXDFMMwdDarM3v6Kahq1rj47vH2A==",
+  "dgSpecHash": "tfpTRn6JXllStI/yiNPJxtMJgwXumzB9mdtTZr8lHVr81CxgmkXxC8ib2VcKkm05iDwb134lz+Ygjp7rCuwILA==",
   "success": true,
-  "projectFilePath": "C:\\Guilherme santos\\C#\\AlunosAPI\\AlunosAPI\\AlunosAPI.csproj",
+  "projectFilePath": "\\\\server\\ALUNOS DEV\\gabrielle.cristine\\SHILTON C#\\AlunosAPI\\AlunosAPI\\AlunosAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alunos\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Alunos\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
